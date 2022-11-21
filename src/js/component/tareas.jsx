@@ -6,11 +6,13 @@ const Tareas = (props) => {
 
     const manejarFormulario = (event) =>{
         setInputText(event.target.value);
+
     }
 
     const submit = (event) => {
         event.preventDefault();
         props.nuevaTarea(inputText);
+        setInputText("")
     }
 
 
